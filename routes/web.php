@@ -29,6 +29,14 @@ Route::get('/checkout', function () {
     return view('frontend.content.order.checkout');
 })->name('order.checkout');
 
+Route::get('/account', function () {
+    return view('frontend.content.user_account.index');
+})->name('user.account');
+
 Route::get('/dashboard', function () {
-    return view('frontend.content.user_account.dashboard');
-})->name('order.checkout');
+    return view('backend.content.dashboard.index');
+})->name('dashboard.index');
+
+Route::get('/dashboard/login', function () {
+    return view('backend.content.auth.login');
+})->name('dashboard.login');
