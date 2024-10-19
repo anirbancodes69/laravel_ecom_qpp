@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="col-xl-3 col-md-4 col-6">
-                <a href="{{ route('dashboard.index') }}" class="logo-header">
+                <a href="{{ route('admin.dashboard') }}" class="logo-header">
                     <img src="{{ asset('frontend/assets') }}/images/logo/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
@@ -19,10 +19,10 @@
                 <nav class="box-navigation text-center">
                     <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
                         <li class="menu-item">
-                            <a href="{{ route('home.index') }}" class="item-link">Home</a>
+                            <a href="{{ route('home') }}" class="item-link">Home</a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ route('dashboard.index') }}" class="item-link">Dashboard</a>
+                            <a href="{{ route('admin.dashboard') }}" class="item-link">Dashboard</a>
                         </li>
                         <li class="menu-item">
                             <a href="#}" class="item-link">User</a>
@@ -52,7 +52,9 @@
             <div class="col-xl-3 col-md-4 col-3">
                 <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
                     <li class="nav-account">
-                        <a href="#login" data-bs-toggle="modal" class="nav-icon-item">Logout
+                        <a href="{{ route('admin.logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('admin-logout-form').submit();"
+                            class="nav-icon-item">Logout
                         </a>
                     </li>
                 </ul>

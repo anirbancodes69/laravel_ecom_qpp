@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="col-xl-3 col-md-4 col-6">
-                <a href="{{ route('home.index') }}" class="logo-header">
+                <a href="{{ route('home') }}" class="logo-header">
                     <img src="{{ asset('frontend/assets') }}/images/logo/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
@@ -19,7 +19,7 @@
                 <nav class="box-navigation text-center">
                     <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
                         <li class="menu-item">
-                            <a href="{{ route('home.index') }}" class="item-link">Home</a>
+                            <a href="{{ route('home') }}" class="item-link">Home</a>
                         </li>
                         <li class="menu-item position-relative">
                             <a href="{{ route('shop.index') }}" class="item-link">Shop All<i
@@ -44,7 +44,7 @@
                     <li class="nav-search"><a href="#canvasSearch" data-bs-toggle="offcanvas"
                             aria-controls="offcanvasLeft" class="nav-icon-item"><i class="icon icon-search"></i></a>
                     </li>
-                    <li class="nav-account"><a href="#login" data-bs-toggle="modal" class="nav-icon-item"><i
+                    <li class="nav-account"><a href="{{ route('login') }}" class="nav-icon-item"><i
                                 class="icon icon-account"></i></a></li>
                     <li class="nav-cart"><a href="#shoppingCart" data-bs-toggle="modal" class="nav-icon-item"><i
                                 class="icon icon-bag"></i><span class="count-box">0</span></a></li>

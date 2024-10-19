@@ -20,7 +20,9 @@
                     <li><a href="my-account-address.html" class="my-account-nav-item">Address</a></li>
                     <li><a href="my-account-edit.html" class="my-account-nav-item">Account Details</a></li>
                     <li><a href="my-account-wishlist.html" class="my-account-nav-item">Wishlist</a></li>
-                    <li><a href="login.html" class="my-account-nav-item">Logout</a></li>
+                    <li><a href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                            class="my-account-nav-item">Logout</a></li>
                 </ul>
             </div>
             <div class="col-lg-9">

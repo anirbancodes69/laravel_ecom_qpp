@@ -32,7 +32,7 @@
             <div class="px_15 lg-px_40">
                 <div class="row wrapper-header align-items-center">
                     <div class="col-xl-3 col-md-4 col-6">
-                        <a href="{{ route('home.index') }}" class="logo-header">
+                        <a href="{{ route('home') }}" class="logo-header">
                             <img src="{{ asset('frontend/assets') }}/images/logo/logo.svg" alt="logo" class="logo">
                         </a>
                     </div>
@@ -41,6 +41,18 @@
         </header>
         <!-- /header -->
 
+        @if (session()->has('error'))
+        <section class="flat-spacing-10">
+            <div class="container">
+                <div class="tf-grid-layout lg-col-10 tf-login-wrap">
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
+
         <section class="flat-spacing-10">
             <div class="container">
                 <div class="tf-grid-layout lg-col-10 tf-login-wrap">
@@ -48,16 +60,18 @@
                         <div id="login">
                             <h5 class="mb_36">Log in</h5>
                             <div>
-                                <form class="" id="login-form" action="my-account.html" accept-charset="utf-8">
+                                <form method="POST" action="{{ route('admin.login.submit') }}">
+                                    @csrf
                                     <div class="tf-field style-1 mb_15">
-                                        <input class="tf-field-input tf-input" placeholder="" type="email"
-                                            id="property3" name="email">
-                                        <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
+                                        <input class="tf-field-input tf-input" placeholder="Enter admin email"
+                                            type="email" id="admin-email" name="email" required>
+                                        <label class="tf-field-label fw-4 text_black-2" for="admin-email">Email
+                                            *</label>
                                     </div>
                                     <div class="tf-field style-1 mb_30">
                                         <input class="tf-field-input tf-input" placeholder="" type="password"
-                                            id="property4" name="password">
-                                        <label class="tf-field-label fw-4 text_black-2" for="property4">Password
+                                            id="admin-password" name="password" required>
+                                        <label class="tf-field-label fw-4 text_black-2" for="admin-password">Password
                                             *</label>
                                     </div>
                                     <div class="">

@@ -5,12 +5,12 @@
         <div class="mb-body">
             <ul class="nav-ul-mb" id="wrapper-menu-navigation">
                 <li class="nav-mb-item">
-                    <a href="{{ route('home.index') }}" class="collapsed mb-menu-link current">
+                    <a href="{{ route('home') }}" class="collapsed mb-menu-link current">
                         <span>Home</span>
                     </a>
                 </li>
                 <li class="nav-mb-item">
-                    <a href="{{ route('dashboard.index') }}" class="collapsed mb-menu-link current">
+                    <a href="{{ route('admin.dashboard') }}" class="collapsed mb-menu-link current">
                         <span>Dashboard</span>
                     </a>
                 </li>
@@ -38,7 +38,9 @@
                     </div>
                 </li>
                 <li class="nav-mb-item">
-                    <a href="#" class="collapsed mb-menu-link current">
+                    <a href="{{ route('admin.logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('admin-logout-form').submit();"
+                        class="collapsed mb-menu-link current">
                         <span>Logout</span>
                     </a>
                 </li>

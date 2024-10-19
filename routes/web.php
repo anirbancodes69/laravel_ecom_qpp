@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Account\UserAccountController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserAuthController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.content.home.index');
-})->name('home.index');
+include('admin/admin.php');
+
+include('auth.php');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/shop', function () {
     return view('frontend.content.shop.index');
@@ -28,15 +33,3 @@ Route::get('/product', function () {
 Route::get('/checkout', function () {
     return view('frontend.content.order.checkout');
 })->name('order.checkout');
-
-Route::get('/account', function () {
-    return view('frontend.content.user_account.index');
-})->name('user.account');
-
-Route::get('/dashboard', function () {
-    return view('backend.content.dashboard.index');
-})->name('dashboard.index');
-
-Route::get('/dashboard/login', function () {
-    return view('backend.content.auth.login');
-})->name('dashboard.login');

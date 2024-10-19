@@ -17,7 +17,7 @@
         </a>
     </div>
     <div class="toolbar-item">
-        <a href="#login" data-bs-toggle="modal">
+        <a href="{{ route('login') }}">
             <div class="toolbar-icon">
                 <i class="icon-account"></i>
             </div>
