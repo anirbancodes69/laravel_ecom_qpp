@@ -1,3 +1,7 @@
+<form id="admin-logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
+
 <!-- Javascript -->
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/jquery.min.js"></script>
@@ -10,6 +14,9 @@
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/wow.min.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/multiple-modal.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/main.js"></script>
+
+@yield('page-scripts')
+
 </body>
 
 </html>

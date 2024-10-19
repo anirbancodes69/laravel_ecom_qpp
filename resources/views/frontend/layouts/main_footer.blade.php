@@ -1,3 +1,7 @@
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
+
 <!-- Javascript -->
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/jquery.min.js"></script>

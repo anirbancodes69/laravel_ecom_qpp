@@ -5,7 +5,7 @@
         <div class="mb-body">
             <ul class="nav-ul-mb" id="wrapper-menu-navigation">
                 <li class="nav-mb-item">
-                    <a href="{{ route('home.index') }}" class="collapsed mb-menu-link current">
+                    <a href="{{ route('home') }}" class="collapsed mb-menu-link current">
                         <span>Home</span>
                     </a>
                 </li>
