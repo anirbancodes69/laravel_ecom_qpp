@@ -28,7 +28,8 @@
                             <a href="#}" class="item-link">User</a>
                         </li>
                         <li class="menu-item position-relative">
-                            <a href="#" class="item-link">Product<i class="icon icon-arrow-down"></i></a>
+                            <a href="{{ route('admin.products.index') }}" class="item-link">Product<i
+                                    class="icon icon-arrow-down"></i></a>
                             <div class="sub-menu submenu-default">
                                 <ul class="menu-list">
                                     <li><a href="blog-sidebar-left.html"

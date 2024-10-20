@@ -14,6 +14,9 @@
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/wow.min.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/multiple-modal.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/assets') }}/js/main.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap4.min.js"></script>
+
 
 @yield('page-scripts')
 
