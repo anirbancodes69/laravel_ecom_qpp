@@ -27,7 +27,7 @@
                     </a>
                     <div id="dropdown-menu-five" class="collapse">
                         <ul class="sub-nav-menu">
-                            <li><a href="#" class="sub-nav-link">Product</a></li>
+                            <li><a href="{{ route('admin.products.index') }}" class="sub-nav-link">Product</a></li>
                             <li><a href="blog-sidebar-left.html" class="sub-nav-link">Category</a></li>
                             <li><a href="blog-sidebar-right.html" class="sub-nav-link">Price</a></li>
                             <li><a href="blog-list.html" class="sub-nav-link">Image</a></li>

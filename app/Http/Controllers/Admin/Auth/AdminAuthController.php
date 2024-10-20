@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -22,7 +22,7 @@ class AdminAuthController extends Controller
 
     public function showLoginForm()
     {
-        return view('backend.content.auth.login');
+        return view('admin.content.auth.login');
     }
 
     public function login(Request $request)

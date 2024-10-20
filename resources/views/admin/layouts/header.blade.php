@@ -10,13 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- font -->
-    <link rel="stylesheet" href="{{ asset('frontend/assets') }}/fonts/fonts.css">
+    {{--
+    <link rel="stylesheet" href="{{ asset('frontend/assets') }}/fonts/fonts.css"> --}}
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('frontend/assets') }}/fonts/font-icons.css">
     <link rel="stylesheet" href="{{ asset('frontend/assets') }}/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/assets') }}/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/assets') }}/css/animate.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/assets') }}/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap4.min.css">
+
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ asset('frontend/assets') }}/images/logo/favicon.png">

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\Admin\AdminTableSeeder;
+use Database\Seeders\Admin\ProductTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             AdminTableSeeder::class,
+            ProductTableSeeder::class,
         ]);
 
     }
